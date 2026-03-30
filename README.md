@@ -1,8 +1,8 @@
 # veracode-pipeline-results
 
-A reusable LLM prompt + scripts pattern for interpreting [Veracode pipeline scan](https://docs.veracode.com/r/pipeline_scan) JSON results. It summarises findings by severity, file, and issue type, and provides prioritised remediation guidance.
+A reusable agent skill + scripts pattern for interpreting [Veracode pipeline scan](https://docs.veracode.com/r/pipeline_scan) JSON results. It summarises findings by severity, file, and issue type, and provides prioritised remediation guidance.
 
-Works with any LLM — Claude, ChatGPT, GitHub Copilot, or any tool that accepts a system prompt.
+Works with GitHub Copilot, Cursor, Claude Code, and any agent that supports the `SKILL.md` convention.
 
 ## What it does
 
@@ -13,12 +13,6 @@ Works with any LLM — Claude, ChatGPT, GitHub Copilot, or any tool that accepts
 - Supports both a default **Summary** mode and an on-request **Detail** mode for drilling into a specific finding, including taint data-path analysis and false-positive assessment
 
 ## Usage
-
-### Any LLM (Claude, ChatGPT, etc.)
-
-1. Copy the contents of `SKILL.md` into the model's system prompt or custom instructions
-2. Run the relevant script(s) to extract data from your scan file (see [Scripts](#scripts) below)
-3. Paste the script output into the conversation and ask the model to summarise it
 
 ### GitHub Copilot, Cursor, and other AI IDEs
 
