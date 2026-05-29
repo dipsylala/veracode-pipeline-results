@@ -14,7 +14,7 @@ Unlike [https://github.com/dipsylala/veracode-skills](https://github.com/dipsyla
 - Groups findings **by source file** with severity-sorted rows
 - Supports both a default **Summary** mode and an on-request **Detail** mode for drilling into a specific finding, including taint data-path analysis and false-positive assessment
 
-## Usage
+## Installation
 
 ### Install with npx skills
 
@@ -40,6 +40,8 @@ Or copy/clone this folder manually into your project (or home directory for pers
 | `.github/skills/veracode-pipeline-results/` | Project — GitHub Copilot |
 | `.agents/skills/veracode-pipeline-results/` | Project — other agents |
 | `.claude/skills/veracode-pipeline-results/` | Project — Claude/Cursor |
+
+## Usage
 
 The agent will automatically load the skill when relevant, or you can invoke it directly:
 
